@@ -1,0 +1,64 @@
+index.hml 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Quieres ser mi San Valentín?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('https://iiischools.com/wp-content/uploads/2022/01/portada-valentin.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5); /* Capa semitransparente */
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+    .button {
+      background: #ff6f91;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+      color: #fff;
+    }
+    .button:hover {
+      background: #ff3b6f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>¿Quieres ser mi San Valentín?</h1>
+    <p>Eres lo mejor que me ha pasado, quiero compartir este día contigo ❤️</p>
+    <button class="button" id="yesButton">¡Sí, quiero!</button>
+  </div>
+
+  <script>
+    document.getElementById('yesButton').addEventListener('click', function() {
+      alert('¡Me alegra tanto escuchar eso! Te amo ❤️');
+    });
+  </script>
+</body>
+</html>
